@@ -49,17 +49,17 @@ export default function ProductDetail({ params }) {
     <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden w-[90%] mx-auto">
         <div className="md:flex">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 py-2">
             <Image
               src={`https://admin.refabry.com/storage/product/${product.image}`} 
               alt={product.name}
               width={300}
               height={300}
               style={{ objectFit: "cover" }}
-              className="w-full h-full rounded-xl object-cover"
+              className="mx-auto rounded-xl object-cover"
             />
           </div>
-          <div className="md:w-1/2 p-6">
+          <div className="md:w-1/2 p-6 items-center  flex-col flex my-auto">
             <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
             <p className="text-2xl font-semibold text-blue-600 mb-4">৳{product.price}</p>
             

@@ -73,6 +73,6 @@ This project integrates with the following APIs:
 - Order placement with shipping details
 - Success confirmation page
 
-## Live Link: []()
+## Live Link: [https://cloudcore-ecom-nextjs.vercel.app/](https://cloudcore-ecom-nextjs.vercel.app/)
 
 ## GitHub Repo Link: [https://github.com/rrishiddh/cloudcore-ecom-nextjs.git](https://github.com/rrishiddh/cloudcore-ecom-nextjs.git)
