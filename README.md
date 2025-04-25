@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js E-commerce App with Cart Functionality
+
+An e-commerce application built with Next.js featuring product listing, cart functionality and order placement capabilities.
+
+## Technologies Used
+
+- Next.js 15
+- Context API for state management
+- Axios for API calls
+- TailwindCSS for styling
+- LocalStorage for cart persistence
+
+## Features
+
+- Responsive product listing page
+- Dynamic product detail pages with routing
+- Add to cart functionality
+- Cart management (add, remove items)
+- Order form with validation
+- Checkout process with shipping information
+- Mobile-first responsive design
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/rrishiddh/cloudcore-ecom-nextjs.git
+cd cloudcore-ecom-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## API Integration
 
-To learn more about Next.js, take a look at the following resources:
+This project integrates with the following APIs:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Product API: `https://admin.refabry.com/api/all/product/get`
+- Order API: `https://admin.refabry.com/api/public/order/create`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Functionalities
 
-## Deploy on Vercel
+### Product Listing
+- Fetches products from API using Axios
+- Displays products in a responsive grid
+- Shows product image, name, and price
+- Provides a "Details" button for each product
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Product Details
+- Dynamic routing based on product ID
+- Displays comprehensive product information
+- "Add to Cart" button redirects to cart
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Cart Management
+- Add products to cart
+- Remove products from cart
+- Calculate subtotal and total prices
+- Persist cart data using localStorage
+
+### Checkout Process
+- Form validation for required fields
+- Order placement with shipping details
+- Success confirmation page
+
+## Live Link: []()
+
+## GitHub Repo Link: [https://github.com/rrishiddh/cloudcore-ecom-nextjs.git](https://github.com/rrishiddh/cloudcore-ecom-nextjs.git)

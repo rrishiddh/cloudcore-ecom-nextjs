@@ -21,7 +21,6 @@ console.log(products)
         console.error('Error fetching products:', err);
       }
     };
-
     fetchProducts();
   }, []);
 
@@ -29,12 +28,12 @@ console.log(products)
   if (error) return <div className="min-h-screen flex items-center justify-center text-red-500">{error}</div>;
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto w-[95%] py-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Our Products</h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.data?.map((product) => (
-          <div key={product.id} product={product} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 transition-transform hover:scale-105">
+          <div key={product.id} product={product} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:-translate-1 duration-200">
           <div className="h-48 overflow-hidden">
             <Image
               src={`https://admin.refabry.com/storage/product/${product.image}`} 

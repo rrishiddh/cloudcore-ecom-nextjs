@@ -39,7 +39,6 @@ export default function ProductDetail({ params }) {
 
   const handleAddToCart = () => {
     addToCart(product);
-    router.push('/cart');
   };
 
   if (loading) return <div className="min-h-screen flex items-center justify-center">Loading product details...</div>;
@@ -48,7 +47,7 @@ export default function ProductDetail({ params }) {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-[90%] mx-auto">
         <div className="md:flex">
           <div className="md:w-1/2">
             <Image
@@ -57,7 +56,7 @@ export default function ProductDetail({ params }) {
               width={300}
               height={300}
               style={{ objectFit: "cover" }}
-              className="w-full h-full object-cover"
+              className="w-full h-full rounded-xl object-cover"
             />
           </div>
           <div className="md:w-1/2 p-6">
@@ -65,16 +64,18 @@ export default function ProductDetail({ params }) {
             <p className="text-2xl font-semibold text-blue-600 mb-4">৳{product.price}</p>
             
             <div className="mb-6">
-              <h2 className="text-xl font-semibold mb-2">Description</h2>
-              <p className="text-gray-700">{product.short_desc || 'No description available'}</p>
+              <h2 className="text-xl font-bold mb-2">Description</h2>
+              <p className=" font-light text-justify">{product.short_desc || 'No description available'}</p>
             </div>
-            
+            <a href="/cart">
             <button 
               onClick={handleAddToCart}
               className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors w-full md:w-auto"
             >
               Add to Cart
             </button>
+            </a>
+           
           </div>
         </div>
       </div>

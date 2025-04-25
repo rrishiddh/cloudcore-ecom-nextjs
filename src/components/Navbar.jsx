@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-blue-600 text-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-5 py-4 flex justify-between items-center ">
         <Link href="/" className="text-xl font-bold">
         CloudCore Store
         </Link>
